@@ -43,6 +43,11 @@
 }
 .ex-10-icon {
     font-size: 60px;
+    animation: icon ;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-direction: reverse;
 }
 .ex-11-icon {
     font-size: 60px;
@@ -117,4 +122,21 @@
   height: auto;
   width: 575px;
   border-radius: 15px;
+}
+@keyframes icon {
+  100%{
+    transform: rotate(360deg);
+  }
+
+}
+.ex-11-icon:hover{
+  animation: ruota 2s linear;
+}
+@keyframes ruota {
+  75%{
+    transform: rotate(300deg);
+  }
+  100%{
+    transform: rotate(0);
+  }
 }
